@@ -15,9 +15,9 @@
 ##安装与配置教程<br>
 * JDK安装配置教程：详情请参考http://jingyan.baidu.com/article/bea41d435bc695b4c41be648.html<br>
 
-* Java ADT安装配置教程<br>
+* Java ADT安装配置<br>
  首先到Eclipse官方网站下载最新的Eclipse IDE for Java EE Developers<br>
- 下载好Eclipse的Zip压缩文件，该程序无需安装，解压就可以使用了<br>
+ 下载好Eclipse的Zip压缩文件，该程序无需安装或配置，解压就可以使用了<br>
  
 * Android Stuido安装配置教程：详情请参考http://www.2cto.com/kf/201604/500642.html<br>
 
