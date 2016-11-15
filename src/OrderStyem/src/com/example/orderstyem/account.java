@@ -11,7 +11,6 @@ import android.widget.Button;
 public class account extends Activity {
 	public  Button menu;
 	public  Button order;
-	public  Button account;
 	public  Button user;
 
 	protected void onCreate(Bundle savedInstanceState){
@@ -25,7 +24,7 @@ public class account extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent();
-				intent.setClass(account.this,MainActivity.class);
+				intent.setClass(account.this,menu.class);
 				startActivity(intent);
 				finish();
 			}
@@ -40,20 +39,6 @@ public class account extends Activity {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent();
 				intent.setClass(account.this,order.class);
-				startActivity(intent);
-				finish();
-			}
-	    	   
-	       });
-	        
-	        account=(Button)findViewById(R.id.account);
-	        account.setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent=new Intent();
-				intent.setClass(account.this, account.class);
 				startActivity(intent);
 				finish();
 			}

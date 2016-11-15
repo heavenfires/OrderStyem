@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class order extends Activity {
 	public  Button menu;
-	public  Button order;
 	public  Button account;
 	public  Button user;
 
@@ -25,21 +24,7 @@ public class order extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent();
-				intent.setClass(order.this,MainActivity.class);
-				startActivity(intent);
-				finish();
-			}
-	    	   
-	       });
-	        
-	        order=(Button)findViewById(R.id.order);
-	        order.setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent=new Intent();
-				intent.setClass(order.this,order.class);
+				intent.setClass(order.this,menu.class);
 				startActivity(intent);
 				finish();
 			}

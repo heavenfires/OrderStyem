@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+    <drawable name="green">#009900</drawable>  
+    <drawable name="red">#FF3333</drawable>   
+   
+</resources>

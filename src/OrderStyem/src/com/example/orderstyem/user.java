@@ -12,7 +12,6 @@ public class user extends Activity {
 	public  Button menu;
 	public  Button order;
 	public  Button account;
-	public  Button user;
 
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -25,7 +24,7 @@ public class user extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent();
-				intent.setClass(user.this,MainActivity.class);
+				intent.setClass(user.this,menu.class);
 				startActivity(intent);
 				finish();
 			}
@@ -60,18 +59,6 @@ public class user extends Activity {
 	    	   
 	       });
 	        
-	        user=(Button)findViewById(R.id.user);
-	        user.setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				Intent intent=new Intent();
-				intent.setClass(user.this, user.class);
-				startActivity(intent);
-				finish();
-			}
-			});
 		}
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
