@@ -22,9 +22,18 @@ public final class R {
     }
     public static final class drawable {
         public static final int btn_color=0x7f020000;
-        public static final int green=0x7f020002;
-        public static final int ic_launcher=0x7f020001;
-        public static final int red=0x7f020003;
+        public static final int cd=0x7f020001;
+        public static final int cdq=0x7f020002;
+        public static final int dd=0x7f020003;
+        public static final int ddq=0x7f020004;
+        public static final int green=0x7f02000a;
+        public static final int grey=0x7f02000c;
+        public static final int ic_launcher=0x7f020005;
+        public static final int js=0x7f020006;
+        public static final int jsq=0x7f020007;
+        public static final int red=0x7f02000b;
+        public static final int yh=0x7f020008;
+        public static final int yhq=0x7f020009;
     }
     public static final class id {
         public static final int account=0x7f080003;

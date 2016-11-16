@@ -20,35 +20,43 @@
             android:id="@+id/menu"
             android:background="#ffffff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="4"
              android:textColor="@drawable/btn_color"  
+           android:drawableTop="@drawable/cd"
+           android:textSize="15sp"
             android:text="菜单" />
 
         <Button
             android:id="@+id/order"
             android:background="#ffffff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="4"
              android:textColor="@drawable/btn_color"  
+             android:drawableTop="@drawable/dd"
+              android:textSize="15sp"
             android:text="点单" />
 
         <Button
             android:id="@+id/account"
             android:background="#ffffff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="4"
              android:textColor="@drawable/btn_color"  
+             android:drawableTop="@drawable/js"
+              android:textSize="15sp"
             android:text="结算" />
 
         <Button
             android:id="@+id/user"
             android:background="#ffffff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="4"
+            android:drawableTop="@drawable/yhq"
+             android:textSize="15sp"
             android:text="用户" />
     </LinearLayout>
 
