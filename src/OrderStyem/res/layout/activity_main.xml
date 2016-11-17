@@ -63,5 +63,27 @@
        
     </LinearLayout>
 
+   <TextView
+       android:id="@+id/tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="61dp"
+       android:singleLine="true"
+       android:focusable="true"
+       android:ellipsize="marquee"
+       android:marqueeRepeatLimit="marquee_forever"
+       android:focusableInTouchMode="true"
+       android:text="Welcome to experience the OrderStyem APP. 亲，终于等到你，赶快来体验一下吧!" />
+
+   <LinearLayout
+       android:id="@+id/layout"
+       android:layout_width="258dp"
+       android:layout_height="150dp"
+       android:layout_alignLeft="@+id/linearLayout1"
+       android:layout_centerVertical="true"
+       android:orientation="horizontal" >
+   </LinearLayout>
    
 </RelativeLayout>

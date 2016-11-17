@@ -21,26 +21,31 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int btn_color=0x7f020000;
-        public static final int cd=0x7f020001;
-        public static final int cdq=0x7f020002;
-        public static final int dd=0x7f020003;
-        public static final int ddq=0x7f020004;
-        public static final int green=0x7f02000a;
-        public static final int grey=0x7f02000c;
-        public static final int ic_launcher=0x7f020005;
-        public static final int js=0x7f020006;
-        public static final int jsq=0x7f020007;
-        public static final int red=0x7f02000b;
-        public static final int yh=0x7f020008;
-        public static final int yhq=0x7f020009;
+        public static final int aaa=0x7f020000;
+        public static final int bbb=0x7f020001;
+        public static final int btn_color=0x7f020002;
+        public static final int ccc=0x7f020003;
+        public static final int cd=0x7f020004;
+        public static final int cdq=0x7f020005;
+        public static final int dd=0x7f020006;
+        public static final int ddq=0x7f020007;
+        public static final int green=0x7f02000d;
+        public static final int grey=0x7f02000f;
+        public static final int ic_launcher=0x7f020008;
+        public static final int js=0x7f020009;
+        public static final int jsq=0x7f02000a;
+        public static final int red=0x7f02000e;
+        public static final int yh=0x7f02000b;
+        public static final int yhq=0x7f02000c;
     }
     public static final class id {
         public static final int account=0x7f080003;
-        public static final int action_settings=0x7f080005;
+        public static final int action_settings=0x7f080007;
+        public static final int layout=0x7f080006;
         public static final int linearLayout1=0x7f080000;
         public static final int menu=0x7f080001;
         public static final int order=0x7f080002;
+        public static final int tv=0x7f080005;
         public static final int user=0x7f080004;
     }
     public static final class layout {
