@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 	private int index=0;
 	
 	private int [] imagePath=new int[]{
-   		 R.drawable.aaa,R.drawable.bbb,R.drawable.ccc,
+   		 R.drawable.aa,R.drawable.bb,R.drawable.cc,R.drawable.ee,R.drawable.ff,
     };
 	
 	@Override
@@ -38,14 +38,14 @@ public class MainActivity extends Activity {
          LinearLayout layout=(LinearLayout)findViewById(R.id.layout);
          ImageView img=new ImageView(this);
          img.setImageResource(imagePath[index]);
-         LayoutParams Params=new LayoutParams(253,148);
+         LayoutParams Params=new LayoutParams(400,200);
          img.setLayoutParams(Params);
          img.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				if(index<2){
+				if(index<4){
 					index++;
 				}else{
 					index=0;
