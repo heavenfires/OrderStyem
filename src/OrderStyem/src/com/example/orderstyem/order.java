@@ -16,10 +16,10 @@ public class order extends Activity {
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.order);
-			super.onCreate(savedInstanceState);
-		 menu=(Button)findViewById(R.id.menu);
+		super.onCreate(savedInstanceState);
+		
+		    menu=(Button)findViewById(R.id.menu);
 	        menu.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -27,13 +27,11 @@ public class order extends Activity {
 				intent.setClass(order.this,menu.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
+			        }
+	            });
 	        
 	        account=(Button)findViewById(R.id.account);
 	        account.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -41,13 +39,11 @@ public class order extends Activity {
 				intent.setClass(order.this, account.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
+			        }
+	            });
 	        
 	        user=(Button)findViewById(R.id.user);
 	        user.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -55,10 +51,10 @@ public class order extends Activity {
 				intent.setClass(order.this, user.class);
 				startActivity(intent);
 				finish();
-			}
-			});
-	    	   
-		}
+			        }
+	     		});
+		    }
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// TODO Auto-generated method stub

@@ -6,10 +6,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.text.Html;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnFocusChangeListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -40,26 +38,25 @@ public class MainActivity extends Activity {
          img.setImageResource(imagePath[index]);
          LayoutParams Params=new LayoutParams(400,200);
          img.setLayoutParams(Params);
+         
          img.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if(index<4){
 					index++;
-				}else{
+				           } 
+				else{
 					index=0;
-				}
+				    }
 				((ImageView)v).setImageResource(imagePath[index]);
 				return;
 			}
-
 		});
-        layout.addView(img);
+          layout.addView(img);
          
-		 menu=(Button)findViewById(R.id.menu);
+		    menu=(Button)findViewById(R.id.menu);
 	        menu.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -67,13 +64,11 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, menu.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
+			        }
+	            });
 	        
 	        order=(Button)findViewById(R.id.order);
 	        order.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -81,13 +76,11 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, order.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
+		        	}
+	            });
 	        
 	        account=(Button)findViewById(R.id.account);
 	        account.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -95,13 +88,11 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, account.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
+	        		}
+	            });
 	        
 	        user=(Button)findViewById(R.id.user);
 	        user.setOnClickListener(new OnClickListener(){
-
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
@@ -109,10 +100,9 @@ public class MainActivity extends Activity {
 				intent.setClass(MainActivity.this, user.class);
 				startActivity(intent);
 				finish();
-			}
-	    	   
-	       });
-	}
+		        	}
+	            });
+        	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

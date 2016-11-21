@@ -12,8 +12,8 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentBottom="true"
-           android:layout_marginLeft="15dp"
-         android:layout_marginRight="15dp"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
           android:orientation="horizontal" >
 
         <Button
@@ -22,9 +22,9 @@
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_weight="4"
-           android:drawableTop="@drawable/cdq"
+            android:drawableTop="@drawable/cdq"
             android:textSize="15sp"
-            android:text="菜单" />
+            android:text="@string/cd" />
 
     <Button
         android:id="@+id/order"
@@ -32,21 +32,21 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_weight="4"
-         android:textColor="@drawable/btn_color" 
-         android:drawableTop="@drawable/dd"
-          android:textSize="15sp"
-        android:text="点单" />
+        android:textColor="@drawable/btn_color" 
+        android:drawableTop="@drawable/dd"
+        android:textSize="15sp"
+        android:text="@string/dd" />
 
     <Button
-         android:id="@+id/account"
-         android:background="#ffffff"
+        android:id="@+id/account"
+        android:background="#ffffff"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_weight="4"
-         android:textColor="@drawable/btn_color"  
-          android:drawableTop="@drawable/js"
-           android:textSize="15sp"
-        android:text="结算" />
+        android:textColor="@drawable/btn_color"  
+        android:drawableTop="@drawable/js"
+        android:textSize="15sp"
+        android:text="@string/js" />
 
    
 
@@ -56,11 +56,11 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:layout_weight="4"
-         android:textColor="@drawable/btn_color"  
-         android:drawableTop="@drawable/yh"
-          android:textSize="15sp"
-        android:text="用户" />
+        android:textColor="@drawable/btn_color"  
+        android:drawableTop="@drawable/yh"
+        android:textSize="15sp"
+        android:text="@string/yh" />
+    
   </LinearLayout>
-
       
 </RelativeLayout>

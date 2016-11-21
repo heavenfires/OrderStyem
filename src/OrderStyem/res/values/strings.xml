@@ -4,5 +4,13 @@
     <string name="app_name">OrderStyem</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="cd">菜单</string>
+    <string name="dd">点单</string>
+    <string name="js">结算</string>
+    <string name="yh">用户</string>
+    
+    
+    
+    
 
 </resources>
