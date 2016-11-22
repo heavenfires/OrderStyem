@@ -2,8 +2,15 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/BmobSDK_3.5.3_20161109.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/gson-2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/okhttp-3.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/okio-1.7.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/org.apache.http.legacy.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/rxandroid-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/BmobSDKDemo_v3.5.3/libs/rxjava-1.1.6.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

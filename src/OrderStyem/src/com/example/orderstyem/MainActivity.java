@@ -1,9 +1,10 @@
 package com.example.orderstyem;
 
-import android.os.Bundle;
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.View;
@@ -12,14 +13,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import cn.bmob.v3.Bmob;
 
 public class MainActivity extends Activity {
 	public  Button menu;
 	public  Button order;
 	public  Button account;
 	public  Button user;
+	public  Button data;
 	private TextView tv;
 	private int index=0;
+	private Context mContext = this;
 	
 	private int [] imagePath=new int[]{
    		 R.drawable.aa,R.drawable.bb,R.drawable.cc,R.drawable.ee,R.drawable.ff,
@@ -29,7 +33,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+		Bmob.initialize(MainActivity.this, "7655abf8dececf9692d74784929e6705");  
 		 tv=(TextView)findViewById(R.id.tv);
          tv.setText(Html.fromHtml("<font color=red>Welcome to</font><font color=blue> experience the</font><font color=green> OrderStyem APP.</font><font color=purple>亲，终于等到你，赶快来体验一下吧!</font>"));
 		
@@ -101,7 +105,7 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 				finish();
 		        	}
-	            });
+	            });	      
         	}
 	
 	@Override
