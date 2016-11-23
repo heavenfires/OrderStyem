@@ -12,19 +12,20 @@
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/jjj.png)<br>
 
 ###用一个按钮监听来提交我们的数据，这个按钮最后将不会出现在主界面UI上，也不会上传到github，以防他人乱改我们的数据库，这只是供我们开发过程测
-	data=(Button)findViewById(R.id.buttontext);<br>
-	data.setOnClickListener(new OnClickListener(){<br>
-	public void onClick(View arg0) {<br>
-	Vdata p2 = new Vdata();<br>
-	p2.setVname("");<br>
-	p2.setVprice();<br>
-	p2.save(new SaveListener<String>() {<br>
+	
+	data=(Button)findViewById(R.id.buttontext);
+	data.setOnClickListener(new OnClickListener(){
+	public void onClick(View arg0) {
+	Vdata p2 = new Vdata();
+	p2.setVname("");
+	p2.setVprice();
+	p2.save(new SaveListener<String>() {
 
-	@Override<br>
-	public void done(String arg0, BmobException arg1) {<br>
-	Toast.makeText(getApplicationContext(), "上传成功",Toast.LENGTH_SHORT).show();<br>
-		}});<br>
-	}<br>
+	@Override
+	public void done(String arg0, BmobException arg1) {
+	Toast.makeText(getApplicationContext(), "上传成功",Toast.LENGTH_SHORT).show();
+		}});
+	}
 });<br>
 
 ###运行程序，如果上传成功，便会有以下界面
