@@ -26,7 +26,7 @@
 	Toast.makeText(getApplicationContext(), "上传成功",Toast.LENGTH_SHORT).show();
 		}});
 	}
-});<br>
+});
 
 ###运行程序，如果上传成功，便会有以下界面
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/kkk.png)<br>
