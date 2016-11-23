@@ -53,7 +53,7 @@
 * Improvements：有关如何改进的具体想法。<br> 
 
 ####(4)回顾结论
-* 即时贴上。<br><br>
+* 即时贴上。<br>
 * 圆点投票来决定下一个sprint会着重进行哪些改进。<br>
 * 每个sprint只关注几个改进就够了。<br> 
 
@@ -61,7 +61,7 @@
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/ppp.jpg)<br>
 
 ##7.团队贡献分按照比例折算成分数后是：
-* 折算分数：20*N*比例<br> 
+* 折算分数：20xNx比例<br> 
 * 我们队伍有2个人：<br> 
 * 其中<br> 
 
