@@ -62,5 +62,21 @@
         android:text="@string/yh" />
     
   </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/linearLayout1"      
+          android:orientation="vertical" >
+
+          <ListView
+              android:id="@+id/lv"
+              android:layout_width="fill_parent"
+              android:layout_height="380sp" 
+              android:drawSelectorOnTop="false"
+              android:scrollbars="vertical"/>
+          
+      </LinearLayout>
       
 </RelativeLayout>
