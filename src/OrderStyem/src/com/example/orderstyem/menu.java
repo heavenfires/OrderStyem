@@ -44,14 +44,10 @@ public class menu extends Activity{
     public  Button delete3;
     public  Button delete4;
     public  Button delete5;
-
-    
 	 
 		protected void onCreate(Bundle savedInstanceState){
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.menu);	
-	 
-
 			
 			btnx1=(Button)findViewById(R.id.btnx1);
 			btnx1.setOnClickListener(new OnClickListener(){
@@ -76,7 +72,7 @@ public class menu extends Activity{
 				        }
 		           });
 			
-			 text1_1=(TextView) findViewById (R.id.text1_1);
+		    text1_1=(TextView) findViewById (R.id.text1_1);
 			add1_1=(Button)findViewById(R.id.add1_1);
 		    preferences = getSharedPreferences("menulist1", MODE_PRIVATE);
 	        editor = preferences.edit();
@@ -85,9 +81,7 @@ public class menu extends Activity{
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
 			        editor.putString("C1",text1_1.getText().toString()) ;
-	                //提交数据
-	                editor.commit(); 
-   				
+	                editor.commit(); 				
 					 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 				        }
 		           });
@@ -102,13 +96,12 @@ public class menu extends Activity{
 						// TODO Auto-generated method stub
 				        editor1.putString("C2",text1_2.getText().toString()) ;
 		                //提交数据
-		                editor1.commit(); 
-	   				
+		                editor1.commit(); 	
 						 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 					        }
 			           });
 				
-				  text1_3=(TextView) findViewById (R.id.text1_3);
+				    text1_3=(TextView) findViewById (R.id.text1_3);
 					add1_3=(Button)findViewById(R.id.add1_3);
 				    preferences2 = getSharedPreferences("menulist3", MODE_PRIVATE);
 			        editor2 = preferences2.edit();
@@ -119,12 +112,11 @@ public class menu extends Activity{
 					        editor2.putString("C3",text1_3.getText().toString()) ;
 			                //提交数据
 			                editor2.commit(); 
-		   				
-							 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
+                    	 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 						        }
 				           });
 					
-					 text1_4=(TextView) findViewById (R.id.text1_4);
+					    text1_4=(TextView) findViewById (R.id.text1_4);
 						add1_4=(Button)findViewById(R.id.add1_4);
 					    preferences3 = getSharedPreferences("menulist4", MODE_PRIVATE);
 				        editor3 = preferences3.edit();
@@ -135,12 +127,11 @@ public class menu extends Activity{
 						        editor3.putString("C4",text1_4.getText().toString()) ;
 				                //提交数据
 				                editor3.commit(); 
-			   				
-								 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
+						 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 							        }
 					           });
 						
-						 text1_5=(TextView) findViewById (R.id.text1_5);
+						    text1_5=(TextView) findViewById (R.id.text1_5);
 							add1_5=(Button)findViewById(R.id.add1_5);
 						    preferences4 = getSharedPreferences("menulist5", MODE_PRIVATE);
 					        editor4 = preferences4.edit();
@@ -150,9 +141,8 @@ public class menu extends Activity{
 									// TODO Auto-generated method stub
 							        editor4.putString("C5",text1_5.getText().toString()) ;
 					                //提交数据
-					                editor4.commit(); 
-				   				
-									 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
+					                editor4.commit(); 				   				
+						 Toast.makeText(menu.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 								        }
 						           });	
 	
@@ -258,7 +248,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 	// TODO Auto-generated method stub
 	getMenuInflater().inflate(R.menu.main, menu);
 	return true;
-}
+    }
 }
 				      
 

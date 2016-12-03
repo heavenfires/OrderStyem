@@ -86,6 +86,10 @@
             android:name="com.example.orderstyem.menu"
             android:label="@string/app_name" >
                </activity>
+                  <activity
+            android:name="com.example.orderstyem.menulist"
+            android:label="@string/app_name" >
+               </activity>
                 <activity
             android:name="com.example.orderstyem.order"
             android:label="@string/app_name" >

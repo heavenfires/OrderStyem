@@ -12,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
         android:orientation="horizontal" >
 
         <Button
             android:id="@+id/menu"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="45sp"
             android:layout_weight="4"
             android:background="#ffffff"
             android:drawableTop="@drawable/cdq"
@@ -29,7 +29,7 @@
         <Button
             android:id="@+id/order"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="45sp"
             android:layout_weight="4"
             android:background="#ffffff"
             android:drawableTop="@drawable/dd"
@@ -40,7 +40,7 @@
         <Button
             android:id="@+id/account"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="45sp"
             android:layout_weight="4"
             android:background="#ffffff"
             android:drawableTop="@drawable/js"
@@ -51,7 +51,7 @@
         <Button
             android:id="@+id/user"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="45sp"
             android:layout_weight="4"
             android:background="#ffffff"
             android:drawableTop="@drawable/yh"
@@ -64,7 +64,6 @@
         android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
         android:orientation="vertical" >
 
         <LinearLayout
@@ -81,7 +80,7 @@
 
             <TextView
                 android:id="@+id/text1_1"
-                android:layout_width="115sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C1\t红烧鱼\t￥88" />
@@ -90,10 +89,19 @@
                 android:id="@+id/add1_1"
                 android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                 android:background="#ffffff"
-                 android:drawableTop="@drawable/car"
-                 android:textSize="13sp"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/car"
+                android:textSize="13sp"
                 android:text="加入" />
+            
+            <Button
+                android:id="@+id/delete1"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/sc"
+                android:textSize="13sp"
+                android:text="移除" />
         </LinearLayout>
 
         <LinearLayout
@@ -111,7 +119,7 @@
 
             <TextView
                 android:id="@+id/text1_2"
-                android:layout_width="115sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C2\t西红柿炒蛋\t￥25" />
@@ -120,10 +128,18 @@
                 android:id="@+id/add1_2"
                 android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                 android:background="#ffffff"
-                 android:drawableTop="@drawable/car"
-                 android:textSize="13sp"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/car"
+                android:textSize="13sp"
                 android:text="加入" />
+             <Button
+                android:id="@+id/delete2"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/sc"
+                android:textSize="13sp"
+                android:text="移除" />
         </LinearLayout>
 
         <LinearLayout
@@ -141,7 +157,7 @@
 
             <TextView
                 android:id="@+id/text1_3"
-                android:layout_width="115sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C3\t糖醋排骨\t￥76" />
@@ -150,10 +166,18 @@
                 android:id="@+id/add1_3"
                 android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                 android:background="#ffffff"
-                 android:drawableTop="@drawable/car"
-                 android:textSize="13sp"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/car"
+                android:textSize="13sp"
                 android:text="加入" />
+             <Button
+                android:id="@+id/delete3"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/sc"
+                android:textSize="13sp"
+                android:text="移除" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,7 +195,7 @@
 
             <TextView
                 android:id="@+id/text1_4"
-                android:layout_width="115sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C4\t麻婆豆腐\t￥40" />
@@ -180,10 +204,18 @@
                 android:id="@+id/add1_4"
                 android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                 android:background="#ffffff"
-                 android:drawableTop="@drawable/car"
-                 android:textSize="13sp"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/car"
+                android:textSize="13sp"
                 android:text="加入" />
+             <Button
+                android:id="@+id/delete4"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/sc"
+                android:textSize="13sp"
+                android:text="移除" />
         </LinearLayout>
 
         <LinearLayout
@@ -201,7 +233,7 @@
 
             <TextView
                 android:id="@+id/text1_5"
-                android:layout_width="115sp"
+                android:layout_width="80sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="C5\t香菇炖鸡\t￥58" />
@@ -210,21 +242,29 @@
                 android:id="@+id/add1_5"
                 android:layout_width="60sp"
                 android:layout_height="wrap_content"
-                 android:background="#ffffff"
-                 android:drawableTop="@drawable/car"
-                 android:textSize="13sp"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/car"
+                android:textSize="13sp"
                 android:text="加入" />
+             <Button
+                android:id="@+id/delete5"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:drawableTop="@drawable/sc"
+                android:textSize="13sp"
+                android:text="移除" />
         </LinearLayout>
         </LinearLayout>
-     
+             
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="fill_parent"
         android:layout_height="60sp"
         android:layout_below="@+id/linearLayout2"
-         android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-      android:orientation="horizontal">
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:orientation="horizontal">
 
     <Button
         android:id="@+id/btnx1"
@@ -232,14 +272,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:text="下一页" />
-
   
     <Button
         android:id="@+id/view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-    android:layout_weight="3"
-        android:text="查看点单" />
+        android:layout_weight="3"
+        android:text="查看菜单车" />
         </LinearLayout>
     
 

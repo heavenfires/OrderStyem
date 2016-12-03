@@ -17,9 +17,6 @@ public class order extends Activity {
 	public  Button account;
 	public  Button user;
 	public  Button clear;
-	  
-
-
 		
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -57,7 +54,7 @@ public class order extends Activity {
 	    c6.setText(C6);
 		
 	    TextView c7 = (TextView) findViewById(R.id.C7);
-		SharedPreferences sp6=getSharedPreferences("menulis7t", 0);
+		SharedPreferences sp6=getSharedPreferences("menulist7", 0);
 	    String C7=sp6.getString("C7", sp6.getString("C7", ""));	
 	    c7.setText(C7);
 	    
@@ -99,7 +96,7 @@ public class order extends Activity {
 			SharedPreferences sp8 = getSharedPreferences("menulist9", MODE_PRIVATE);
 			Editor editor8 = sp8.edit();  
 			SharedPreferences sp9 = getSharedPreferences("menulist10", MODE_PRIVATE);
-			Editor editor9 = sp9.edit();  
+			Editor editor9 = sp9.edit(); 
 			editor.clear();  
 			editor.commit();
 			editor1.clear();  
@@ -120,13 +117,11 @@ public class order extends Activity {
 			editor8.commit();
 			editor9.clear();  
 			editor9.commit();
+			 startActivity(new Intent(order.this, order.class));
 			Toast.makeText(order.this, "清空菜单车成功！", Toast.LENGTH_SHORT).show();
 			}
            });
-		      
-	   
-		  
-	    
+		          
 		    menu=(Button)findViewById(R.id.menu);
 	        menu.setOnClickListener(new OnClickListener(){
 			@Override

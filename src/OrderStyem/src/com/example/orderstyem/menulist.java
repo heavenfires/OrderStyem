@@ -1,6 +1,6 @@
 package com.example.orderstyem;
 
-	import android.app.Activity;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -44,14 +44,11 @@ import android.widget.Toast;
 	    public  Button delete8;
 	    public  Button delete9;
 	    public  Button delete10;
-	    
-	    
-		 
+	    		 
 			protected void onCreate(Bundle savedInstanceState){
 				super.onCreate(savedInstanceState);
 				setContentView(R.layout.menulist);
-				
-				
+			
 				btns2=(Button)findViewById(R.id.btns2);
 				btns2.setOnClickListener(new OnClickListener(){
 					@Override
@@ -74,9 +71,8 @@ import android.widget.Toast;
 						finish();
 					        }
 			           });
-				
-				
-				 text1_6=(TextView) findViewById (R.id.text1_6);
+								
+				    text1_6=(TextView) findViewById (R.id.text1_6);
 					add1_6=(Button)findViewById(R.id.add1_6);
 				    preferences5 = getSharedPreferences("menulist6", MODE_PRIVATE);
 			        editor5 = preferences5.edit();
@@ -86,9 +82,8 @@ import android.widget.Toast;
 							// TODO Auto-generated method stub
 					        editor5.putString("C6",text1_6.getText().toString()) ;
 			                //提交数据
-			                editor5.commit(); 
-		   				
-							 Toast.makeText(menulist.this, "加入点单购物车成功！", Toast.LENGTH_SHORT).show(); 
+			                editor5.commit(); 		   				
+					Toast.makeText(menulist.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 						        }
 				           });
 					
@@ -102,13 +97,12 @@ import android.widget.Toast;
 								// TODO Auto-generated method stub
 						        editor6.putString("C7",text1_7.getText().toString()) ;
 				                //提交数据
-				                editor6.commit(); 
-			   				
-								 Toast.makeText(menulist.this, "加入点单购物车成功！", Toast.LENGTH_SHORT).show(); 
+				                editor6.commit(); 			
+					Toast.makeText(menulist.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 							        }
 					           });
 						
-						  text1_8=(TextView) findViewById (R.id.text1_8);
+						    text1_8=(TextView) findViewById (R.id.text1_8);
 							add1_8=(Button)findViewById(R.id.add1_8);
 						    preferences7 = getSharedPreferences("menulist8", MODE_PRIVATE);
 					        editor7 = preferences7.edit();
@@ -118,13 +112,12 @@ import android.widget.Toast;
 									// TODO Auto-generated method stub
 							        editor7.putString("C8",text1_8.getText().toString()) ;
 					                //提交数据
-					                editor7.commit(); 
-				   				
-									 Toast.makeText(menulist.this, "加入点单购物车成功！", Toast.LENGTH_SHORT).show(); 
+					                editor7.commit();  				
+					 Toast.makeText(menulist.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 								        }
 						           });
 							
-							 text1_9=(TextView) findViewById (R.id.text1_9);
+							    text1_9=(TextView) findViewById (R.id.text1_9);
 								add1_9=(Button)findViewById(R.id.add1_9);
 							    preferences8 = getSharedPreferences("menulist9", MODE_PRIVATE);
 						        editor8 = preferences8.edit();
@@ -134,25 +127,23 @@ import android.widget.Toast;
 										// TODO Auto-generated method stub
 								        editor8.putString("C9",text1_9.getText().toString()) ;
 						                //提交数据
-						                editor8.commit(); 
-					   				
-										 Toast.makeText(menulist.this, "加入点单购物车成功！", Toast.LENGTH_SHORT).show(); 
+						                editor8.commit(); 		
+				   	 Toast.makeText(menulist.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 									        }
 							           });
 								
-								 text1_10=(TextView) findViewById (R.id.text1_10);
-									add1_10=(Button)findViewById(R.id.add1_10);
-								    preferences9 = getSharedPreferences("menulist10", MODE_PRIVATE);
-							        editor9 = preferences9.edit();
-									add1_10.setOnClickListener(new OnClickListener(){
+						      text1_10=(TextView) findViewById (R.id.text1_10);
+							  add1_10=(Button)findViewById(R.id.add1_10);
+							  preferences9 = getSharedPreferences("menulist10", MODE_PRIVATE);
+							  editor9 = preferences9.edit();
+							  add1_10.setOnClickListener(new OnClickListener(){
 										@Override
 										public void onClick(View arg0) {
 											// TODO Auto-generated method stub
-									        editor9.putString("C10",text1_10.getText().toString()) ;
-							                //提交数据
-							                editor9.commit(); 
-						   				
-											 Toast.makeText(menulist.this, "加入点单购物车成功！", Toast.LENGTH_SHORT).show(); 
+								 editor9.putString("C10",text1_10.getText().toString()) ;
+							     //提交数据
+							     editor9.commit(); 
+                      Toast.makeText(menulist.this, "加入菜单车成功！", Toast.LENGTH_SHORT).show(); 
 										        }
 								           });			
 			
@@ -215,8 +206,7 @@ import android.widget.Toast;
 				Toast.makeText(menulist.this, "移出菜单车成功！", Toast.LENGTH_SHORT).show();
 				}
 	           });
-		    
-			
+		    			
 			   order=(Button)findViewById(R.id.order);
 		       order.setOnClickListener(new OnClickListener(){
 				@Override
