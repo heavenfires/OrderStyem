@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg_hdpi"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="62.0px"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/strAccInputLabel"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/login_edit_pwd"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/login_edit_pwd"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/strPswInputLabel"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_success_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15.0px"
+        android:layout_marginRight="15.0px"
+        android:layout_marginTop="62.0px"
+        android:background="@drawable/login_back"
+        android:paddingBottom="10.0px"
+        android:paddingTop="21.0px"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/login_success_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ff3f3f3f"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/qq_edit_login"
+        android:ems="10"
+        android:hint="@string/strInputAccHint"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="45.0sp"
+        android:saveEnabled="true" >
+
+        <requestFocus />
+    </EditText>
+ <!--    <Button
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_view"
+        android:layout_marginTop="56dp"
+        android:text="退出" />-->
+   <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView" />-->
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"       
+        android:layout_below="@+id/login_view"
+        android:layout_marginTop="56dp"
+        android:text="登录" />
+
+</RelativeLayout>

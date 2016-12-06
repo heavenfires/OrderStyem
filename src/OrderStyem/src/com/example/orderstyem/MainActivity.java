@@ -1,11 +1,14 @@
 package com.example.orderstyem;
 
+
+
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -21,7 +24,7 @@ public class MainActivity extends Activity {
 	public  Button account;
 	public  Button user;
 	public  Button data;
-	private TextView tv;
+	private TextView tv,tv1;
 	private int index=0;
 	private Context mContext = this;
 	
@@ -33,10 +36,17 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Bmob.initialize(MainActivity.this, "7655abf8dececf9692d74784929e6705");  
-		 tv=(TextView)findViewById(R.id.tv);
-         tv.setText(Html.fromHtml("<font color=red>Welcome to</font><font color=blue> experience the</font><font color=green> OrderStyem APP.</font><font color=purple>亲，终于等到你，赶快来体验一下吧!</font>"));
 		
+		Log.i("test", "333333");
+		tv=(TextView)findViewById(R.id.tv);
+         tv.setText(Html.fromHtml("<font color=red>Welcome to</font><font color=blue> experience the</font><font color=green> OrderStyem APP.</font><font color=purple>亲，终于等到你，赶快来体验一下吧!</font>"));
+         final Intent intent=getIntent();	//获取Intent对象
+ 		Bundle bundle=intent.getExtras();	//获取传递的数据包
+ 		tv1=(TextView)findViewById(R.id.textView1);
+ 		tv1.setText("欢迎你用户  "+bundle.getString("userName"));
+         
+         
+         
          LinearLayout layout=(LinearLayout)findViewById(R.id.layout);
          ImageView img=new ImageView(this);
          img.setImageResource(imagePath[index]);
