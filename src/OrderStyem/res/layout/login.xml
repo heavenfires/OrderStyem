@@ -92,23 +92,14 @@
 
         <requestFocus />
     </EditText>
- <!--    <Button
+    <Button
         android:id="@+id/exit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/login_view"
         android:layout_marginTop="56dp"
-        android:text="退出" />-->
-   <!-- <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/username"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="30dp"
-        android:text="TextView" />-->
+        android:text="退出" />
 
     <Button
         android:id="@+id/login_btn"
@@ -123,9 +114,8 @@
         android:id="@+id/res"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"       
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/login_view"
-        android:layout_marginTop="56dp"
         android:text="登录" />
 
 </RelativeLayout>
