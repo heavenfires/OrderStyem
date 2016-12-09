@@ -218,9 +218,9 @@ t2=(EditText)findViewById(R.id.password);
 				// TODO Auto-generated method stub
 				 AlertDialog.Builder dialog = new AlertDialog.Builder(Login.this);
 				 dialog.setTitle("Warning!");
-			        dialog.setMessage("确定要退出吗?");
+			        dialog.setMessage("确定退出吗?(Are you Sure to exit?)");
 			        dialog.setCancelable(false);
-			        dialog.setPositiveButton("确定",
+			        dialog.setPositiveButton("确定(sure)",
 			                new DialogInterface.OnClickListener() {
 			                    @Override
 			                    public void onClick(DialogInterface dialog, int which) {
@@ -228,7 +228,7 @@ t2=(EditText)findViewById(R.id.password);
 			                    }
 			                });
 
-			        dialog.setNegativeButton("不不不不",
+			        dialog.setNegativeButton("不,取消(Cancel)",
 			                new DialogInterface.OnClickListener() {
 			                    @Override
 			                    public void onClick(DialogInterface dialog, int which) {
