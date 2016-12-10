@@ -70,7 +70,6 @@
         android:layout_marginTop="3sp"
         android:textSize="18sp"
         android:text="您的菜单车：" />
-
  
     <LinearLayout
         android:id="@+id/l1"
@@ -78,13 +77,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/Cview"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et0"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>
+               
     <TextView
         android:id="@+id/C1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"      
          />
+    
+    <TextView
+        android:id="@+id/t0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C1-红烧鱼\t" />        
+         <TextView
+        android:id="@+id/p0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="88" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l2"
@@ -92,13 +116,37 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l1"
         android:orientation="horizontal">
-        
+            <EditText
+      android:id="@+id/et1"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:text="0"
+      android:singleLine="true" >
+    </EditText>
+     
     <TextView
         android:id="@+id/C2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"      />
+    
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C2-西红柿炒蛋\t" />
+       <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="25" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l3"
@@ -106,13 +154,37 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l2"
         android:orientation="horizontal">
+       <EditText
+      android:id="@+id/et2"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>
         
     <TextView
         android:id="@+id/C3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"         />
+    
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C3-糖醋排骨\t" />
+       <TextView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="76" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l4"
@@ -120,13 +192,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l3"
         android:orientation="horizontal">
-        
+       <EditText
+      android:id="@+id/et3"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>
+     
     <TextView
         android:id="@+id/C4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"    />
+     <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C4-麻婆豆腐\t" />
+        <TextView
+        android:id="@+id/p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="40" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l5"
@@ -134,13 +229,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l4"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et4"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:textSize="8sp"
+      android:inputType="number" 
+      android:singleLine="true" >
+    </EditText>
+     
     <TextView
         android:id="@+id/C5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"        />
+     <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C5-香菇炖鸡\t" />
+        <TextView
+        android:id="@+id/p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="58" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l6"
@@ -148,13 +266,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l5"
         android:orientation="horizontal">
+        <EditText
+      android:id="@+id/et5"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:textSize="8sp"
+      android:inputType="number" 
+      android:singleLine="true" >
+    </EditText>
         
     <TextView
         android:id="@+id/C6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"       />
+     <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C6-鱼香肉丝\t" />
+        <TextView
+        android:id="@+id/p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="65" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l7"
@@ -162,16 +303,35 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l6"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et6"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>    
     <TextView
         android:id="@+id/C7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
-
-  
-
+        android:singleLine="true"  />
+     <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C7-炒空心菜\t" />  
+           <TextView
+        android:id="@+id/p6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="15" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l8"
@@ -179,13 +339,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l7"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et7"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>
+         
     <TextView
         android:id="@+id/C8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"         />
+     <TextView
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C8-鱼头豆腐汤\t" />
+        <TextView
+        android:id="@+id/p7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="68" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l9"
@@ -193,13 +376,36 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l8"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et8"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>
+  
     <TextView
         android:id="@+id/C9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"         />
+     <TextView
+        android:id="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C9-米饭一碗\t" />
+        <TextView
+        android:id="@+id/p8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="8" />        
     </LinearLayout>
      <LinearLayout
         android:id="@+id/l10"
@@ -207,21 +413,75 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/l9"
         android:orientation="horizontal">
-        
+        <EditText
+      android:id="@+id/et9"
+      android:layout_width="wrap_content"
+      android:layout_height="25sp"
+      android:text="0"
+      android:digits="1234567890"
+      android:inputType="number" 
+      android:textSize="8sp"
+      android:singleLine="true" >
+    </EditText>        
     <TextView
         android:id="@+id/C10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-         />
+        android:singleLine="true"       />
+     <TextView
+        android:id="@+id/t9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="C10-天地一号\t" />
+        <TextView
+        android:id="@+id/p9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="5sp"
+        android:text="6" />        
+    </LinearLayout>
+      <LinearLayout
+        android:id="@+id/l11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l10"
+        android:orientation="horizontal">     
+          <TextView
+        android:id="@+id/smcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#009900"
+        android:text="请填写下单的份数，默认为0份！" />         
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l11"
+        android:orientation="horizontal">      
+     <Button
+         android:id="@+id/qjs"
+         android:layout_width="wrap_content"
+         android:layout_height="50sp"
+         android:background="#ffffff"
+         android:drawableLeft="@drawable/view"
+         android:textSize="16sp"
+         android:text="去结算" />
+       
     </LinearLayout>
 
      <Button
          android:id="@+id/clear"
          android:layout_width="wrap_content"
-         android:layout_height="35sp"
+         android:layout_height="25sp"
          android:layout_alignRight="@+id/linearLayout1"
          android:layout_marginTop="1sp"
+         android:background="#ffffff"
+         android:drawableLeft="@drawable/clean"
          android:textSize="13sp"
          android:text="清空菜单车" />
 

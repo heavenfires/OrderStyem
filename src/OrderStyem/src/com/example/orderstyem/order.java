@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,13 @@ public class order extends Activity {
 	public  Button account;
 	public  Button user;
 	public  Button clear;
-		
+	public  Button qjs;
+	SharedPreferences shared;
+    SharedPreferences.Editor editor11;
+    Integer[] idtvs=new Integer[]{R.id.t0,R.id.t1,R.id.t2,R.id.t3,R.id.t4,R.id.t5,R.id.t6,R.id.t7,R.id.t8,R.id.t9};
+    Integer[] idets=new Integer[]{R.id.et0,R.id.et1,R.id.et2,R.id.et3,R.id.et4,R.id.et5,R.id.et6,R.id.et7,R.id.et8,R.id.et9};
+    Integer[] idtv1s=new Integer[]{R.id.p0,R.id.p1,R.id.p2,R.id.p3,R.id.p4,R.id.p5,R.id.p6,R.id.p7,R.id.p8,R.id.p9};
+
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.order);
@@ -121,7 +128,36 @@ public class order extends Activity {
 			Toast.makeText(order.this, "清空菜单车成功！", Toast.LENGTH_SHORT).show();
 			}
            });
-		          
+	    
+	    qjs=(Button)findViewById(R.id.qjs);
+	    shared = getSharedPreferences("zjs", MODE_PRIVATE);
+        editor11 = shared.edit();
+	    qjs.setOnClickListener(new OnClickListener(){
+		@Override
+		public void onClick(View arg0) {		
+			// TODO Auto-generated method stub
+			int sum=0;//sum0=0,sum1=0,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0,sum7=0,sum8=0,sum9=0;
+			String content="";  
+			for (int i=0,len=idets.length;i<len;i++) {  
+				  EditText et=(EditText)findViewById(idets[i]);  
+				  TextView p=(TextView)findViewById(idtv1s[i]);
+				  TextView tv=(TextView)findViewById(idtvs[i]);
+sum=((((Integer.valueOf(et.getText().toString()))+0)*(Integer.valueOf(p.getText().toString())))+ sum);
+                    if(et.getText().toString() != null)	{
+	             content+= tv.getText().toString()+"\n";   	
+                    }  
+			}
+			  editor11.putString("cjs",content) ;
+			  editor11.putInt("js",sum) ;
+              editor11.commit(); 
+                Intent intent=new Intent();
+				intent.setClass(order.this, account.class);
+				startActivity(intent);
+				finish();
+	Toast.makeText(order.this, "根据您的点单去结算！", Toast.LENGTH_SHORT).show();						
+	     }
+        });
+	    
 		    menu=(Button)findViewById(R.id.menu);
 	        menu.setOnClickListener(new OnClickListener(){
 			@Override
