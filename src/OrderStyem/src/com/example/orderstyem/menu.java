@@ -60,6 +60,7 @@ public class menu extends Activity{
 					finish();
 				        }
 		           });
+			
 			view1=(Button)findViewById(R.id.view1);
 			view1.setOnClickListener(new OnClickListener(){
 				@Override

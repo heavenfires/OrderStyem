@@ -60,6 +60,7 @@ import android.widget.Toast;
 						finish();
 					        }
 			           });
+				
 				view2=(Button)findViewById(R.id.view2);
 				view2.setOnClickListener(new OnClickListener(){
 					@Override
