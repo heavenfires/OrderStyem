@@ -112,6 +112,14 @@
           android:label="@string/app_name" >  
                </activity>
         <activity
+            android:name="com.example.orderstyem.Insertnum"
+          android:label="@string/app_name" >  
+               </activity>
+                 <activity
+            android:name="com.example.orderstyem.Moidify"
+          android:label="@string/app_name" >  
+               </activity>
+                <activity
             android:name="com.example.orderstyem.Vdata"
           android:label="@string/app_name" >  
                </activity>

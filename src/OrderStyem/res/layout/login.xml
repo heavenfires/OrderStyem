@@ -26,13 +26,13 @@
             android:paddingLeft="7.0sp"
             android:text="@string/strAccInputLabel"
             android:textColor="#ff3f3f3f"
-            android:textSize="16.0dip" />
+            android:textSize="16.0sp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="1.0dip"
+            android:layout_marginRight="1.0sp"
             android:background="@drawable/qq_edit_login"
             android:inputType="textPassword"
             android:maxLength="16"
@@ -50,7 +50,7 @@
             android:paddingLeft="7.0sp"
             android:text="@string/strPswInputLabel"
             android:textColor="#ff3f3f3f"
-            android:textSize="16.0dip" />
+            android:textSize="16.0sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#ff3f3f3f"
-            android:textSize="20.0dip" />
+            android:textSize="20.0sp" />
     </RelativeLayout>
 
     <EditText
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/login_view"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="119dp"
+        android:layout_marginTop="119sp"
         android:background="@drawable/qq_edit_login"
         android:ems="10"
         android:hint="@string/strInputAccHint"
@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/login_view"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="56sp"
         android:text="退出" />
 
     <Button
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="35sp"
         android:text="@string/register" />
 
     <Button
