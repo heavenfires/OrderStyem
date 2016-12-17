@@ -5,12 +5,13 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" >
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#60A89E" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45sp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="15sp"
         android:layout_marginRight="15sp"
@@ -18,7 +19,7 @@
 
         <Button
             android:id="@+id/menu"
-            android:background="#ffffff"
+            android:background="#60A89E"
             android:layout_width="wrap_content"
             android:layout_height="45sp"
             android:layout_weight="4"
@@ -29,7 +30,7 @@
 
         <Button
             android:id="@+id/order"
-            android:background="#ffffff"
+            android:background="#60A89E"
             android:layout_width="wrap_content"
             android:layout_height="45sp"
             android:layout_weight="4"
@@ -40,7 +41,7 @@
 
         <Button
             android:id="@+id/account"
-            android:background="#ffffff"
+            android:background="#60A89E"
             android:layout_width="wrap_content"
             android:layout_height="45sp"
             android:layout_weight="4"
@@ -51,7 +52,7 @@
 
         <Button
             android:id="@+id/user"
-            android:background="#ffffff"
+            android:background="#60A89E"
             android:layout_width="wrap_content"
             android:layout_height="45sp"
             android:layout_weight="4"
@@ -60,5 +61,35 @@
             android:text="@string/yh" />
         
     </LinearLayout>
+
+    <Button
+        android:id="@+id/modifypassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginTop="21sp"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/Desknumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/modifypassword"
+        android:layout_alignRight="@+id/modifypassword"
+        android:layout_below="@+id/modifypassword"
+        android:layout_marginTop="58sp"
+        android:text="添加当前在店桌号" />
+
+    <Button
+        android:id="@+id/buttonreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Desknumber"
+        android:layout_alignRight="@+id/Desknumber"
+        android:layout_below="@+id/Desknumber"
+        android:layout_marginTop="57sp"
+        android:text="安全退出" />
  
 </RelativeLayout>
