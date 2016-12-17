@@ -33,6 +33,7 @@
 
 ##4.sprint 3 团队贡献分按照比例折算成分数后是：
 * 折算分数：20*N*比例；我们队伍有2个人，其中：<br>
+
 ####甘佳萍在此次项目对团队的贡献分数为：21分
 ####卓宇靖在此次项目对团队的贡献分数为：19分
 
@@ -52,7 +53,7 @@
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/iiiii.png)<br>
  
 ##2.燃尽图：Sprint 1、2、3  各个sprint燃尽图情况如下：
-![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/mmm.png)<br><br>
+![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/mmm.jpg)<br><br>
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/mmmm.png)<br><br>
 ![image](https://github.com/heavenfires/OrderStyem/raw/master/docs/yyimage/mmmmm.png)<br>
 
